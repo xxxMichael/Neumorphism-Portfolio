@@ -1,0 +1,222 @@
+.certifications {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  color: #f7fafc;
+  display: flex;
+  align-items: center;
+  padding: 8rem 0 4rem;
+  position: relative;
+}
+
+.certifications__content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.certifications__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.certifications__title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #f7fafc;
+}
+
+.certifications__gradient-line {
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #8b5cf6 0%, #06b6d4 100%);
+  border-radius: 2px;
+  margin: 0 auto;
+}
+
+.certifications__container {
+  display: flex;
+  justify-content: center;
+}
+
+.certifications__showcase {
+  background: rgba(45, 55, 72, 0.8);
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 
+    20px 20px 40px rgba(0, 0, 0, 0.4),
+    -20px -20px 40px rgba(74, 85, 104, 0.1);
+  border: 2px solid rgba(139, 92, 246, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.certifications__showcase::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #8b5cf6, #06b6d4, #8b5cf6);
+  border-radius: 22px;
+  z-index: -1;
+  animation: borderGlow 3s ease-in-out infinite;
+}
+
+@keyframes borderGlow {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.certifications__grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.certification-item {
+  transition: var(--transition-smooth);
+}
+
+.certification-item--featured {
+  transform: scale(1.1);
+}
+
+.certification-card {
+  background: rgba(45, 55, 72, 0.9);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 
+    15px 15px 30px rgba(0, 0, 0, 0.4),
+    -15px -15px 30px rgba(74, 85, 104, 0.1);
+  transition: var(--transition-smooth);
+  height: 100%;
+}
+
+.certification-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 
+    20px 20px 40px rgba(0, 0, 0, 0.5),
+    -20px -20px 40px rgba(74, 85, 104, 0.15);
+}
+
+.certification-item--featured .certification-card {
+  border: 2px solid rgba(139, 92, 246, 0.5);
+}
+
+.certification-card__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.certification-card__header {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: rgba(26, 32, 44, 0.8);
+}
+
+.certification-card__image {
+  max-width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+  filter: brightness(1.1);
+}
+
+.certification-card__info {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.certification-card__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #f7fafc;
+  line-height: 1.3;
+}
+
+.certification-card__issuer {
+  font-size: 0.9rem;
+  color: #8b5cf6;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.certification-card__date {
+  font-size: 0.8rem;
+  color: #a0aec0;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.certification-card__credential {
+  font-size: 0.7rem;
+  color: #718096;
+  margin: 0;
+  font-family: monospace;
+}
+
+/* Animaciones */
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .certifications__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .certification-item--featured {
+    transform: none;
+    order: -1;
+  }
+  
+  .certifications__showcase {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .certifications {
+    padding: 6rem 0 3rem;
+  }
+  
+  .certifications__showcase {
+    padding: 1.5rem;
+  }
+  
+  .certification-card__image {
+    max-height: 80px;
+  }
+  
+  .certification-card__title {
+    font-size: 1rem;
+  }
+  
+  .certification-card__info {
+    padding: 1rem;
+  }
+}
