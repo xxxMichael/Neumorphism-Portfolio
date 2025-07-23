@@ -21,18 +21,13 @@ const Header = () => {
   };
 
   return (
-    <header className={`header ${isScrolled ? 'header--scrolled' : ''}`}>
       <div className="header__container">
         {/* Logo */}
-        <div className="header__logo" onClick={() => scrollToSection('hero')}>
-          <div className="logo neumorphism">
-            <span className="logo__text">PJ</span>
-          </div>
-        </div>
+       
 
         {/* Navigation Desktop */}
         <nav className="header__nav">
-          <ul className="nav__list neumorphism">
+          <ul className="nav__list">
             {navigationItems.map((item) => (
               <li key={item.id} className="nav__item">
                 <button
@@ -82,7 +77,7 @@ const Header = () => {
           </nav>
         </div>
       </div>
-    </header>
+
   );
 };
 
