@@ -1,5 +1,4 @@
 export const NAVIGATION_ITEMS = [
-  { id: 'home', label: 'Inicio', href: '#hero' },
   { id: 'about', label: 'Acerca', href: '#about' },
   { id: 'skills', label: 'Habilidades', href: '#skills' },
   { id: 'projects', label: 'Proyectos', href: '#projects' },

@@ -1,12 +1,7 @@
 // Responsabilidad: Solo configuración de navegación
 export const NAVIGATION_CONFIG = {
   sections: [
-    { 
-      id: 'hero',
-      route: '#hero',
-      order: 1,
-      isHome: true
-    },
+
     { 
       id: 'about',
       route: '#about',
