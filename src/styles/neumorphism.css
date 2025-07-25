@@ -1,0 +1,177 @@
+/* Neumorphism Global Styles */
+
+/* Main container with neumorphic depth effect */
+.neumorphic-container {
+  background: linear-gradient(135deg, #482d2d 0%, #1a202c 100%);
+  border-radius: 40px;
+  padding: 2rem;
+  margin: 2rem;
+  position: relative;
+  
+  /* Inset shadow effect for the sunken appearance */
+  box-shadow: 
+    inset 20px 20px 40px rgba(0, 0, 0, 0.5),
+    inset -20px -20px 40px rgba(74, 85, 104, 0.1),
+    /* Outer elevated edges */
+    0 0 0 1px rgba(74, 85, 104, 0.1),
+    0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced container for content areas */
+.neumorphic-content {
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  border-radius: 30px;
+  padding: 3rem 2rem;
+  position: relative;
+  
+  /* Deep inset effect */
+  box-shadow: 
+    inset 15px 15px 30px rgba(0, 0, 0, 0.4),
+    inset -15px -15px 30px rgba(74, 85, 104, 0.08);
+}
+
+/* Border gradient effect for enhanced depth */
+.neumorphic-border {
+  position: relative;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  padding: 3px;
+  
+  /* Elevated border effect */
+  box-shadow: 
+    20px 20px 40px rgba(0, 0, 0, 0.3),
+    -20px -20px 40px rgba(74, 85, 104, 0.1),
+    inset 2px 2px 4px rgba(74, 85, 104, 0.1),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.neumorphic-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 40px;
+  background: linear-gradient(45deg, 
+    rgba(74, 85, 104, 0.1) 0%, 
+    transparent 50%, 
+    rgba(0, 0, 0, 0.2) 100%);
+  z-index: 1;
+}
+
+/* Container utilities for centering content */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+}
+
+.section__content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Neumorphism button styles */
+.neumorphism-button-dark {
+  background: #2d3748;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  color: #f7fafc;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  
+  /* Enhanced neumorphic button effect */
+  box-shadow: 
+    8px 8px 16px rgba(0, 0, 0, 0.4),
+    -8px -8px 16px rgba(74, 85, 104, 0.1),
+    inset 2px 2px 4px rgba(74, 85, 104, 0.1),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.neumorphism-button-dark:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    12px 12px 24px rgba(0, 0, 0, 0.5),
+    -12px -12px 24px rgba(74, 85, 104, 0.15),
+    inset 2px 2px 4px rgba(74, 85, 104, 0.1),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.neumorphism-button-dark:active {
+  transform: translateY(0);
+  box-shadow: 
+    inset 8px 8px 16px rgba(0, 0, 0, 0.4),
+    inset -8px -8px 16px rgba(74, 85, 104, 0.1);
+}
+
+/* Neumorphic card component */
+.neumorphic-card {
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  border-radius: 25px;
+  padding: 2rem;
+  position: relative;
+  
+  /* Card with subtle inset and outer shadows */
+  box-shadow: 
+    inset 10px 10px 20px rgba(0, 0, 0, 0.3),
+    inset -10px -10px 20px rgba(74, 85, 104, 0.08),
+    5px 5px 15px rgba(0, 0, 0, 0.2),
+    -5px -5px 15px rgba(74, 85, 104, 0.05);
+}
+
+/* Section wrapper with neumorphic effect */
+.neumorphic-section {
+  margin: 2rem 1rem;
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  border-radius: 35px;
+  padding: 3rem 2rem;
+  position: relative;
+  
+  /* Section depth effect */
+  box-shadow: 
+    inset 15px 15px 30px rgba(0, 0, 0, 0.4),
+    inset -15px -15px 30px rgba(74, 85, 104, 0.08),
+    0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Floating elements for enhanced depth */
+.neumorphic-float {
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  border-radius: 20px;
+  padding: 1.5rem;
+  
+  /* Floating effect */
+  box-shadow: 
+    15px 15px 30px rgba(0, 0, 0, 0.3),
+    -15px -15px 30px rgba(74, 85, 104, 0.1),
+    inset 2px 2px 4px rgba(74, 85, 104, 0.05),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.1);
+  
+  transition: all 0.3s ease;
+}
+
+.neumorphic-float:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    20px 25px 40px rgba(0, 0, 0, 0.4),
+    -20px -15px 40px rgba(74, 85, 104, 0.15),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.05),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.1);
+}
