@@ -8,6 +8,7 @@ import Certifications from './components/sections/Certifications';
 // import Experience from './components/sections/Experience';
 // import Contact from './components/sections/Contact';
 import './App.css';
+import './styles/neumorphism.css';
 
 function App() {
   return (
