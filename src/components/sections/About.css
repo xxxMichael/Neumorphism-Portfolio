@@ -1,10 +1,10 @@
 .about {
   min-height: 100vh;
-  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  background: transparent;
   color: #f7fafc;
   display: flex;
   align-items: center;
-  padding: 8rem 0 4rem;
+  padding: 4rem 2rem;
   position: relative;
 }
 
@@ -31,7 +31,7 @@
   height: 400px;
   border-radius: 20px;
   padding: 2rem;
-  background: rgba(45, 55, 72, 0.8);
+  background: #232732;
   box-shadow: 
     20px 20px 40px rgba(0, 0, 0, 0.4),
     -20px -20px 40px rgba(74, 85, 104, 0.1);
@@ -66,7 +66,7 @@
   left: 0;
   width: 60px;
   height: 4px;
-  background: linear-gradient(90deg, #8b5cf6, #06b6d4);
+  background: #8b5cf6;
   border-radius: 2px;
 }
 

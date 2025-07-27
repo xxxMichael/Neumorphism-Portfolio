@@ -25,8 +25,7 @@ const Hero = () => {
       <div className="container">
         <div className="hero__content">
           {/* Avatar circular con ilustración */}
-        
-
+   
           {/* Contenido de texto */}
           <div className="hero__text-section">
             <div className="hero__greeting">Hey</div>
@@ -41,10 +40,9 @@ const Hero = () => {
 
             <p className="hero__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non
-              imperdiet lorem. Nulla luctus quam sit amet mauris fringilla
-              dictum. Donec vestibulum quam sed orci suscipit, posuere aliquam
-              nibh interdum. Aenean tincidunt sagittis cursus. Maecenas at
-              aliquam
+              imperdiet lorem. Nulla luctus quam sit amet mauris fringilla dictum.
+              Donec vestibulum quam sed orci suscipit, posuere aliquam nibh
+              interdum. Aenean tincidunt sagittis cursus. Maecenas at aliquam
             </p>
 
             <div className="hero__actions">
