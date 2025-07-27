@@ -14,13 +14,15 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Hero />
-      <About />
-      <Projects />
-      <Skills />
-      <Certifications />
-      {/* <Experience />
-      <Contact /> */}
+      <div className="main-content neumorphic-main-container">
+        <Hero />
+        <About />
+        <Projects />
+        <Skills />
+        <Certifications />
+        {/* <Experience />
+        <Contact /> */}
+      </div>
     </div>
   );
 }
