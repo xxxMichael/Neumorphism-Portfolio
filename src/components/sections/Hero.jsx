@@ -5,6 +5,7 @@ import { useTypewriter } from "../../hooks/useAnimations";
 import { useNavigation } from "../../hooks/useNavigation";
 import { iconService } from "../../services/IconService";
 import Card from "../ui/Card";
+import HeroParticles from "../particles/HeroParticles";
 import "./Hero.css";
 
 const Hero = () => {
@@ -22,6 +23,9 @@ const Hero = () => {
 
   return (
     <section id="hero" className="hero hero--dark">
+      {/* Partículas con iconos de Font Awesome */}
+      <HeroParticles />
+      
       <div className="container">
         <div className="hero__content">
           {/* Avatar circular con ilustración */}

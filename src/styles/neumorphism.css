@@ -4,16 +4,19 @@
 .neumorphic-main-container {
   background: #232732;
   border-radius: 50px;
-  margin: 2rem auto;
-  max-width: 1400px;
-  width: calc(100% - 4rem);
+  margin: 0.5rem auto 5rem auto;
+  margin-top: 1.5rem;
+  max-width: 1000px;
+  width: calc(100% - 8rem);
   position: relative;
   overflow: hidden;
   
-  /* Deep inset shadow for sunken main container effect */
+  /* Balanced inset shadow for symmetrical sunken main container effect */
   box-shadow: 
     inset 25px 25px 50px rgba(0, 0, 0, 0.6),
-    inset -25px -25px 50px rgba(74, 85, 104, 0.1),
+    inset -25px -25px 50px rgba(0, 0, 0, 0.4),
+    inset 25px -25px 50px rgba(74, 85, 104, 0.08),
+    inset -25px 25px 50px rgba(74, 85, 104, 0.08),
     /* Subtle outer elevation for the border */
     0 0 0 2px rgba(74, 85, 104, 0.1),
     0 8px 16px rgba(0, 0, 0, 0.3);
@@ -28,20 +31,26 @@
 /* Responsive design for main container */
 @media (max-width: 1440px) {
   .neumorphic-main-container {
-    margin: 1.5rem auto;
-    width: calc(100% - 3rem);
+    margin: 0.5rem auto 2rem auto;
+    margin-top: 1.25rem;
+    width: calc(100% - 6rem);
     border-radius: 40px;
+    max-width: 900px;
   }
 }
 
 @media (max-width: 768px) {
   .neumorphic-main-container {
-    margin: 1rem auto;
-    width: calc(100% - 2rem);
+    margin: 0.25rem auto 1.5rem auto;
+    margin-top: 1rem;
+    width: calc(100% - 3rem);
     border-radius: 30px;
+    max-width: 700px;
     box-shadow: 
       inset 15px 15px 30px rgba(0, 0, 0, 0.6),
-      inset -15px -15px 30px rgba(74, 85, 104, 0.1),
+      inset -15px -15px 30px rgba(0, 0, 0, 0.4),
+      inset 15px -15px 30px rgba(74, 85, 104, 0.08),
+      inset -15px 15px 30px rgba(74, 85, 104, 0.08),
       0 0 0 1px rgba(74, 85, 104, 0.1),
       0 4px 8px rgba(0, 0, 0, 0.3);
   }
@@ -49,12 +58,16 @@
 
 @media (max-width: 480px) {
   .neumorphic-main-container {
-    margin: 0.5rem auto;
-    width: calc(100% - 1rem);
+    margin: 0.25rem auto 1rem auto;
+    margin-top: 0.75rem;
+    width: calc(100% - 2rem);
     border-radius: 20px;
+    max-width: 400px;
     box-shadow: 
       inset 10px 10px 20px rgba(0, 0, 0, 0.6),
-      inset -10px -10px 20px rgba(74, 85, 104, 0.1),
+      inset -10px -10px 20px rgba(0, 0, 0, 0.4),
+      inset 10px -10px 20px rgba(74, 85, 104, 0.08),
+      inset -10px 10px 20px rgba(74, 85, 104, 0.08),
       0 0 0 1px rgba(74, 85, 104, 0.1),
       0 2px 4px rgba(0, 0, 0, 0.3);
   }
@@ -68,10 +81,12 @@
   margin: 2rem;
   position: relative;
   
-  /* Inset shadow effect for the sunken appearance */
+  /* Balanced inset shadow effect for the symmetrical sunken appearance */
   box-shadow: 
     inset 20px 20px 40px rgba(0, 0, 0, 0.5),
-    inset -20px -20px 40px rgba(74, 85, 104, 0.1),
+    inset -20px -20px 40px rgba(0, 0, 0, 0.3),
+    inset 20px -20px 40px rgba(74, 85, 104, 0.08),
+    inset -20px 20px 40px rgba(74, 85, 104, 0.08),
     /* Outer elevated edges */
     0 0 0 1px rgba(74, 85, 104, 0.1),
     0 2px 4px rgba(0, 0, 0, 0.1);
@@ -84,10 +99,12 @@
   padding: 3rem 2rem;
   position: relative;
   
-  /* Deep inset effect */
+  /* Balanced deep inset effect */
   box-shadow: 
     inset 15px 15px 30px rgba(0, 0, 0, 0.4),
-    inset -15px -15px 30px rgba(74, 85, 104, 0.08);
+    inset -15px -15px 30px rgba(0, 0, 0, 0.3),
+    inset 15px -15px 30px rgba(74, 85, 104, 0.06),
+    inset -15px 15px 30px rgba(74, 85, 104, 0.06);
 }
 
 /* Border gradient effect for enhanced depth */
