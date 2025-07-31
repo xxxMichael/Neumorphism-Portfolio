@@ -58,7 +58,7 @@ const Hero = () => {
               </button>
 
               <button
-                className="hero__btn hero__btn--secondary neumorphism-button-dark"
+                className="hero__btn hero__btn--primary neumorphism-button-dark"
                 onClick={handleContactMe}
               >
                 Contact me
