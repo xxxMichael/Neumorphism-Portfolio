@@ -1,7 +1,7 @@
 import React from "react";
 import { portfolioData } from "../../data/portfolioData";
 import { useAnimations } from "../../hooks/useAnimations";
-import Card from "../ui/Card";
+import ImageCard from "../ui/ImageCard";
 import "./About.css";
 import Avatar from "../../assets/Profile.jpg";
 const About = () => {
@@ -15,9 +15,10 @@ const About = () => {
           <div className="about__grid">
             {/* Avatar con ilustración futurista */}
             <div className="about__image-section">
-              <Card className="about__avatar-card" variant="dark" hover={false}>
-                <img src={Avatar} alt="" className="about__avatar-illustration" />
-              </Card>
+              <ImageCard
+                image={Avatar}
+               
+              />
             </div>
 
             {/* Contenido de texto */}
