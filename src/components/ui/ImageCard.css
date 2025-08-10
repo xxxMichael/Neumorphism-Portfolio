@@ -1,0 +1,43 @@
+/* From Uiverse.io by Yaseen549 */
+.card {
+    width: 280px;
+    height: 360px;
+    border-radius: 30px;
+    background: #232732;
+    box-shadow: 15px 15px 30px rgba(13, 15, 19, 0.8),
+        -15px -15px 30px rgba(45, 51, 64, 0.5);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-image-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: #232732;
+    box-shadow: inset 8px 8px 16px rgba(13, 15, 19, 0.6),
+                inset -8px -8px 16px rgba(45, 51, 64, 0.3);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card-image:hover {
+    transform: scale(1.05);
+}
+
