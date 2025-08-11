@@ -14,7 +14,7 @@
   /* Balanced inset shadow for symmetrical sunken main container effect */
   box-shadow: 
     inset 25px 25px 50px rgba(0, 0, 0, 0.6),
-    inset -25px -25px 50px rgba(0, 0, 0, 0.4),
+    inset -25px -25px 50px rgba(0, 0, 0, 0.6),
     inset 25px -25px 50px rgba(74, 85, 104, 0.08),
     inset -25px 25px 50px rgba(74, 85, 104, 0.08),
     /* Subtle outer elevation for the border */
@@ -96,7 +96,7 @@
 .neumorphic-content {
   background: #232732;
   border-radius: 30px;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
   position: relative;
   
   /* Balanced deep inset effect */
@@ -151,7 +151,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
 }
 
 .section__content {
@@ -215,10 +215,10 @@
 
 /* Section wrapper with neumorphic effect */
 .neumorphic-section {
-  margin: 2rem 1rem;
+  margin: 1rem 1rem;
   background: #232732;
   border-radius: 35px;
-  padding: 3rem 2rem;
+  padding: 1rem 1rem;
   position: relative;
   
   /* Section depth effect */
