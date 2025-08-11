@@ -56,7 +56,7 @@
   margin: 0 auto;
   gap: 3rem;
   width: 100%;
-  
+
   /* Remove individual background and shadows - let main container handle it */
   background: transparent;
   border-radius: 0;
@@ -82,20 +82,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   /* Enhanced neumorphic avatar with floating effect */
-  box-shadow: 
+  box-shadow:
     25px 25px 50px rgba(0, 0, 0, 0.5),
     -25px -25px 50px rgba(74, 85, 104, 0.1),
     inset 5px 5px 10px rgba(74, 85, 104, 0.08),
     inset -5px -5px 10px rgba(0, 0, 0, 0.3);
-  
+
   transition: all 0.3s ease;
 }
 
 .hero__avatar-container:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 
+  box-shadow:
     30px 35px 60px rgba(0, 0, 0, 0.6),
     -30px -20px 60px rgba(74, 85, 104, 0.15),
     inset 5px 5px 10px rgba(74, 85, 104, 0.08),
@@ -148,6 +148,13 @@
   margin-left: 2px;
 }
 
+.hero__title-accent::before {
+  content: '[';
+  color: #e53e3e;
+  margin-right: 2px;
+}
+
+
 .hero__description {
   font-size: 1.1rem;
   line-height: 1.7;
@@ -179,13 +186,13 @@
 .hero__btn--primary {
   background: #2d3748;
   color: #f7fafc;
-  box-shadow: 
+  box-shadow:
     8px 8px 16px rgba(0, 0, 0, 0.3),
     -8px -8px 16px rgba(74, 85, 104, 0.1);
 }
 
 .hero__btn--primary:hover {
-  box-shadow: 
+  box-shadow:
     12px 12px 24px rgba(0, 0, 0, 0.4),
     -12px -12px 24px rgba(74, 85, 104, 0.15);
   transform: translateY(-2px);
@@ -195,7 +202,7 @@
   background: #2d3748;
   color: #f7fafc;
   border: 2px solid #4a5568;
-  box-shadow: 
+  box-shadow:
     inset 8px 8px 16px rgba(0, 0, 0, 0.2),
     inset -8px -8px 16px rgba(74, 85, 104, 0.05);
 }
@@ -203,16 +210,19 @@
 .hero__btn--secondary:hover {
   border-color: #6366f1;
   color: #6366f1;
-  box-shadow: 
+  box-shadow:
     inset 12px 12px 24px rgba(0, 0, 0, 0.3),
     inset -12px -12px 24px rgba(74, 85, 104, 0.1);
 }
 
 /* Animaciones */
 @keyframes float-gentle {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-10px);
   }
@@ -257,6 +267,7 @@
 }
 
 @media (max-width: 1024px) {
+
   /* Reducir el ancho de las partículas en tablets */
   .hero--dark #tsparticles-left,
   .hero--dark #tsparticles-right {
@@ -267,20 +278,20 @@
 /* Estilo para el header en tema oscuro */
 .neumorphism-dark {
   background: #2d3748;
-  box-shadow: 
+  box-shadow:
     8px 8px 16px rgba(0, 0, 0, 0.3),
     -8px -8px 16px rgba(74, 85, 104, 0.1);
 }
 
 .neumorphism-button-dark {
   background: #2d3748;
-  box-shadow: 
+  box-shadow:
     8px 8px 16px rgba(0, 0, 0, 0.3),
     -8px -8px 16px rgba(74, 85, 104, 0.1);
 }
 
 .neumorphism-button-dark:hover {
-  box-shadow: 
+  box-shadow:
     12px 12px 24px rgba(0, 0, 0, 0.4),
     -12px -12px 24px rgba(74, 85, 104, 0.15);
 }
