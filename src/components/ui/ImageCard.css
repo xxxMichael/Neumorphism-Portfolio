@@ -1,43 +1,74 @@
-/* From Uiverse.io by Yaseen549 */
-.card {
-    width: 280px;
-    height: 360px;
-    border-radius: 30px;
+/* ImageCard - Card específica para mostrar solo imágenes */
+.image-card {
+    width: 250px;
+    height: 300px;
+    border-radius: 25px;
     background: #232732;
     box-shadow: 15px 15px 30px rgba(13, 15, 19, 0.8),
         -15px -15px 30px rgba(45, 51, 64, 0.5);
-    padding: 25px;
+    padding: 15px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    gap: 15px;
+    justify-content: center;
     overflow: hidden;
     position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-image-container {
+.image-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 20px 20px 40px rgba(13, 15, 19, 0.9),
+        -20px -20px 40px rgba(45, 51, 64, 0.6);
+}
+
+.image-card-container {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
     background: #232732;
-    box-shadow: inset 8px 8px 16px rgba(13, 15, 19, 0.6),
-                inset -8px -8px 16px rgba(45, 51, 64, 0.3);
+    box-shadow: inset 6px 6px 12px rgba(13, 15, 19, 0.7),
+                inset -6px -6px 12px rgba(45, 51, 64, 0.4);
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.card-image {
+.image-card-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
 }
 
-.card-image:hover {
-    transform: scale(1.05);
+.image-card-img:hover {
+    transform: scale(1.08);
 }
 
+/* Variante más pequeña para galerías */
+.image-card.small {
+    width: 180px;
+    height: 220px;
+    padding: 12px;
+}
+
+.image-card.small .image-card-container {
+    border-radius: 15px;
+}
+
+.image-card.small .image-card-img {
+    border-radius: 12px;
+}
+
+/* Variante cuadrada */
+.image-card.square {
+    width: 250px;
+    height: 250px;
+}
+
+/* Variante rectangular horizontal */
+.image-card.landscape {
+    width: 350px;
+    height: 250px;
+}
