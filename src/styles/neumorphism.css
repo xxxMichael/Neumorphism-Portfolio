@@ -10,11 +10,12 @@
   width: calc(100% - 8rem);
   position: relative;
   overflow: hidden;
+  padding: 2rem;
   
   /* Balanced inset shadow for symmetrical sunken main container effect */
   box-shadow: 
-    inset 25px 25px 50px rgba(0, 0, 0, 0.6),
-    inset -25px -25px 50px rgba(0, 0, 0, 0.6),
+    inset 25px 25px 50px rgba(0, 0, 0, 0.5),
+    inset -25px -25px 50px rgba(0, 0, 0, 0.5),
     inset 25px -25px 50px rgba(74, 85, 104, 0.08),
     inset -25px 25px 50px rgba(74, 85, 104, 0.08),
     /* Subtle outer elevation for the border */
@@ -36,6 +37,7 @@
     width: calc(100% - 6rem);
     border-radius: 40px;
     max-width: 900px;
+    padding: 1.5rem;
   }
 }
 
@@ -46,6 +48,7 @@
     width: calc(100% - 3rem);
     border-radius: 30px;
     max-width: 700px;
+    padding: 1rem;
     box-shadow: 
       inset 15px 15px 30px rgba(0, 0, 0, 0.6),
       inset -15px -15px 30px rgba(0, 0, 0, 0.4),
@@ -63,6 +66,7 @@
     width: calc(100% - 2rem);
     border-radius: 20px;
     max-width: 400px;
+    padding: 0.75rem;
     box-shadow: 
       inset 10px 10px 20px rgba(0, 0, 0, 0.6),
       inset -10px -10px 20px rgba(0, 0, 0, 0.4),
