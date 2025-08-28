@@ -15,10 +15,7 @@ const About = () => {
           <div className="about__grid">
             {/* Avatar con ilustración futurista */}
             <div className="about__image-section">
-              <ImageCard
-                image={Avatar}
-               
-              />
+              <ImageCard image={Avatar} />
             </div>
 
             {/* Contenido de texto */}
@@ -27,16 +24,21 @@ const About = () => {
 
               <div className="about__description">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  non imperdiet lorem. Nulla luctus quam sit amet mauris
-                  fringilla dictum. Donec vestibulum quam sed orci suscipit,
-                  posuere aliquam nibh interdum. Aenean tincidunt sagittis
-                  cursus. Maecenas at aliquam ipsum, quis cursus nunc.
+                  My name is Michael Chavez, I'm 20 and a fourth-semester
+                  software engineering student based in Tungurahua, Ecuador. I
+                  have a strong passion for web development, data structures,
+                  front-end design, and technologies like Three.js.
                 </p>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  non imperdiet lorem. Nulla luctus quam sit amet mauris
+                  Outside of my regular activities, I enjoy reading, combat
+                  sports, video games, movies, and indulging in delicious
+                  chinese cuisine.
+                </p>
+                <p>
+                  I'm continuously thrilled to collaborate with my classmates
+                  and teams to develop meaningful projects. Your visit to my
+                  portfolio is deeply appreciated!
                 </p>
               </div>
 
@@ -47,11 +49,11 @@ const About = () => {
                   <span className="about__stat-label">Projects Completed</span>
                 </div>
                 <div className="about__stat">
-                  <span className="about__stat-number">3+</span>
+                  <span className="about__stat-number">3</span>
                   <span className="about__stat-label">Years Experience</span>
                 </div>
                 <div className="about__stat">
-                  <span className="about__stat-number">15+</span>
+                  <span className="about__stat-number">15</span>
                   <span className="about__stat-label">Technologies</span>
                 </div>
               </div>
