@@ -4,7 +4,7 @@
   color: #f7fafc;
   display: flex;
   align-items: center;
-  padding: 1rem 1rem;
+  padding: 1rem -2rem;
   position: relative;
 }
 
@@ -12,6 +12,17 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.about__stat-number-accent {
+  color: #e53e3e;
+  position: relative;
+}
+
+.about__stat-number::after {
+  content: '+';
+  color: #e53e3e;
+  margin-left: 2px;
 }
 
 .about__grid {
@@ -32,7 +43,7 @@
   border-radius: 20px;
   padding: 2rem;
   background: #232732;
-  box-shadow: 
+  box-shadow:
     20px 20px 40px rgba(0, 0, 0, 0.4),
     -20px -20px 40px rgba(74, 85, 104, 0.1);
   position: relative;
@@ -99,9 +110,9 @@
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  
+
   /* Enhanced neumorphic button effect */
-  box-shadow: 
+  box-shadow:
     8px 8px 16px rgba(0, 0, 0, 0.4),
     -8px -8px 16px rgba(74, 85, 104, 0.1),
     inset 2px 2px 4px rgba(74, 85, 104, 0.1),
@@ -110,7 +121,7 @@
 
 .about__stat:hover {
   transform: translateY(-2px);
-  box-shadow: 
+  box-shadow:
     12px 12px 24px rgba(0, 0, 0, 0.5),
     -12px -12px 24px rgba(74, 85, 104, 0.15),
     inset 2px 2px 4px rgba(74, 85, 104, 0.1),
@@ -119,7 +130,7 @@
 
 .about__stat:active {
   transform: translateY(0);
-  box-shadow: 
+  box-shadow:
     inset 8px 8px 16px rgba(0, 0, 0, 0.4),
     inset -8px -8px 16px rgba(74, 85, 104, 0.1);
 }
@@ -148,6 +159,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -161,12 +173,12 @@
     gap: 3rem;
     text-align: center;
   }
-  
+
   .about__avatar-card {
     width: 300px;
     height: 300px;
   }
-  
+
   .about__stats {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -177,22 +189,22 @@
   .about {
     padding: 6rem 0 3rem;
   }
-  
+
   .about__avatar-card {
     width: 250px;
     height: 250px;
     padding: 1rem;
   }
-  
+
   .about__stats {
     grid-template-columns: repeat(3, 1fr);
     gap: 0.5rem;
   }
-  
+
   .about__stat {
     padding: 1rem;
   }
-  
+
   .about__stat-number {
     font-size: 1.5rem;
   }
